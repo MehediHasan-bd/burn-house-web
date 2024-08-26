@@ -1,11 +1,440 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment-3</title>
-  </head>
-  <body>
-    hello world
-  </body>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Barn House Ltd.</title>
+  
+  <!--Google Font Link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  
+  <!--Font Awosome Cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!--Tailwind & DaysiUi Cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+   <!--Talwind Config.-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'bgwhaite': '#FFFFFF',
+              'bggray': '#F4F4F4',
+              'bgbtn': '#ABEF5F',
+              'bgbtnm': '#ABEF5F80',
+            }
+          }
+        }
+      }
+    </script>
+    
+
+  <style>
+   .manrupe-font{
+     font-family: "Manrope", sans-serif;
+   }
+  </style>
+</head>
+
+<body class="manrupe-font">
+<header>
+  <!--nav bar start here-->
+  <nav class="mt-8">
+<div class="navbar bg-base-100 w-11/12 mx-auto flex justify-between">
+      <!--nav title-->
+  <div class="navbar-start">
+     <h1 class="lg:text-4xl text-3xl font-bold flex gap-2 items-center justify-center">  
+    <span class="badge bg-bgbtn py-4 px-3 border-none"> <i class="fa-solid fa-arrow-right text-black -rotate-45 "></i> </span>
+      Rinterio</h1>
+      
+        <div class=" flex justify-center items-center space-x-8 px-8 pl-16 text-same hidden">
+          <p class="font-bold">Home</p>
+          <p>Services</p>
+          <p>Portfolio</p>
+          <p>Blog</p>  
+          <p class="">Contact</p>
+          
+          <div class="flex gap-2">
+       <span class="badge bg-gray-100 py-5 px-3 border-none"> <i class="fa-solid fa-magnifying-glass"></i> </span>
+       <span class="badge bg-gray-100 py-5 px-3 border-none"> <i class="fa-solid fa-cart-shopping"></i> </span>
+  
+    </div>
+
+        </div>
+  </div>
+  
+
+  
+  
+  
+  <div>
+  <!--button-->
+  <button class="btn btn-primary lg:wy-3 lg:wx-6 border-bgbtnm rounded-3xl bg-bgbtn text-black font-bold col-span-2 hidden ">Book Consult
+    <div class="bg-black p-2 px-2.5 rounded-full">
+   <i class="fa-solid fa-arrow-right text-white -rotate-45 font-sm"></i>
+          </div>
+  </button>
+        <!-- dropdown bars-->
+        <i class="fa-solid fa-bars"></i>
+ </div>
+   
+   
+</div>
+  </nav>
+  <!--nav bar end here-->
+  
+  <!--banner section start here-->
+  <section class="bg-bgwhaite">
+    <div class="hero w-11/12 mx-auto py-8 ">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <!--banner img-->
+    <img
+      src="accets/banner.png"
+      class="max-w-full rounded-lg" />
+    <div class="text-center">
+      <!--banner title & subtitle-->
+     <h1 class="text-3xl lg:text-6xl font-bold ">A barn house of this design has a
+      striking appearance</h1>
+      <p class="py-6 text-sm text-gray-600">
+        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
+        accents, and large windows that flood the space with natural light.
+      </p>
+      <!--banner button-->
+      <button class="btn btn-primary w-full lg:wy-3 lg:wx-6 border-bgbtn rounded-3xl bg-bgbtnm text-black font-bold ">View Details
+      <div class="bg-bgbtn p-2 px-2.5 rounded-full">
+        <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+      </div>
+      </button>
+    </div>
+  </div>
+</div>
+</section>
+</header>
+  
+  <!--banner section end here-->
+  
+  
+  
+  <!--about-us section start here-->
+  <section class="relative ">
+    <!--vector png-->
+        <div class="absolute top-6 ml-8 ">
+          <img src="accets/Vector.png" alt="accets/Vector.png">
+        </div>
+  <div class="hero bg-base-200 py-8">
+  <div class="hero-content flex flex-col lg:flex-row w-11/12 mx-auto ">
+  <!--text div-->
+    <div class="flex-1 py-8">
+      <!--title & subtitle div-->
+      <div class="text-center mb-2">
+      <button class=" text-base py-0.75 px-2 rounded-2xl bg-bgwhaite">
+        <i class="fa-solid fa-arrow-right "></i>   about us</button>
+      <h1 class="lg:text-4xl text-3xl font-bold ">We design thoughtful, liveable spaces</h1>
+      <p class="py-2 text-base">
+        Our dedication to offering a home you love in a boutique and large apartment community includes on-line amenities.
+      </p>
+      </div>
+      <!--card div-->
+      <div>
+      <!--card one-->
+      <div class="card card-side bg-base-100 shadow ">
+  <figure>
+    <img class="pl-4"
+      src="accets/commercial.png"
+      alt="Movie" />
+  </figure>
+  <!--text part-->
+  <div class="card-body">
+    <h2 class="card-title text-bold">Commercial</h2>
+    <p class="text-base">clean apartments and communities</p>
+  </div>
+</div>
+
+      <!--card two-->
+  <div class="card card-side bg-base-100 shadow mt-2">
+  <figure>
+    <img class="pl-4"
+      src="accets/residential.png"
+      alt="Movie2" />
+  </figure>
+  <!--text part-->
+  <div class="card-body">
+    <h2 class="card-title text-bold">Residential</h2>
+    <p class="text-base">timely repair and Maintenance</p>
+  </div>
+</div>
+
+</div>
+</div>
+    <!--img div-->
+    <div class="flex-1 ">
+        <img class=" rounded-lg shadow "
+        src="accets/Rectangle.png" alt="Rectangle.png">
+      </div>
+    </div>
+  </div>
+</section>
+ <!--about-us section end here-->
+
+ <!--our work section start here-->
+ <section class="hero bg-base-200 py-2" >
+   <div class="hero-content flex flex-col w-11/12 mx-auto">
+     <div>
+       <!--btn title & subtitle div-->
+       <div class="max-w-lg text-center">
+          <button class=" text-base py-1 px-2.5 rounded-3xl mb-2 bg-bgwhaite">
+            <i class="fa-solid fa-arrow-right "></i> How we works</button>
+         <h1 class="lg:text-4xl text-3xl font-bold">Our Works Process</h1>
+         <p class="py-2 text-base">
+           All our guests that stay at Furnished and Serviced Apartments receive as our gift a welcome pack.
+         </p>
+       </div>
+     </div>
+        <!--card div here-->
+        <div class="grid lg:grid-cols-4 grid-row gap-3">
+          <!--card 1-->
+        <div class="w-full bg-[#E7C1D3] p-4 rounded-2xl">
+          <img src="accets/concept.png" alt="accets/concept.png">
+          <h3 class="font-bold mt-1 mb-1">Concept</h3>
+          <p class="text-base">Depreciate all furniture and property items to minimise your taxation.</p>
+        </div>
+        
+          <!--card 2-->
+          <div class="w-full bg-[#EFDA6E] p-4 rounded-2xl">
+            <img src="accets/flow-chart.png" alt="accets/concept.png">
+            <h3 class="font-bold mt-1 mb-1">Design Process</h3>
+            <p class="text-base">Get a better quality tenant that will treat the property & respect.</p>
+          </div>
+          
+            <!--card 3-->
+            <div class="w-full bg-[#A4DAC3] p-4 rounded-2xl">
+              <img src="accets/vision.png" alt="accets/concept.png">
+              <h3 class="font-bold mt-1 mb-1">Supervision</h3>
+              <p class="text-base">Ensuring your property will be presented in its best light.</p>
+            </div>
+            
+              <!--card 4-->
+              <div class="w-full bg-[#77AAEA] p-4 rounded-2xl">
+                <img src="accets/budget-planning.png" alt="accets/concept.png">
+                <h3 class="font-bold mt-1 mb-1">Budget Planning</h3>
+                <p class="text-base">Your property will be constantly maintained and cleaned.</p>
+              </div>
+        </div>
+   </div>
+ </section>
+ <!--our work section end here-->
+
+ <!--Portfolio section start here-->
+  <section class="hero mt-2 py-6 bg-base-100">
+    <div class="hero-content flex flex-col w-11/12 mx-auto">
+      <div>
+        <!--btn title & subtitle div-->
+        <div class="max-w-lg text-center">
+          <button class=" text-base py-1 px-2.5 rounded-3xl mb-2 bg-bgbtnm ">
+            <i class="fa-solid fa-arrow-right"></i>Explore our Latest works</button>
+          <h1 class="lg:text-4xl text-3xl font-bold">Our Latest Portfolio</h1>
+          <p class="py-2 text-base">
+              Follow the links below to learn more about our culture and technology, read our success stories
+          </p>
+        </div>
+      </div>
+      <!--card div here-->
+      <div class="grid grid-cols-12 grid-rows-2 ">
+        <!--card 1-->
+        <div class="grid col-span-8 border rounded-xl">
+          <div class="flex p-2 gap-2">
+          <!--img-->
+          <div class=""><img src="accets/img1.png" alt="accets/img1.png"></div>
+          <div class="gap-4 pt-4">
+            <h3 class="font-bold">Commercial</h3
+          <p class="text-base">Financing or refinancing options on conventional.</p>
+        <div class="card-actions justify-start">
+    <h4 class="text-md font-bold flex gap-2 items-center justify-center text-black">  View Details
+    <span class="badge bg-bgbtn py-4 px-3 border-none"> <i class="fa-solid fa-arrow-right text-black -rotate-45 "></i> </span></h4>
+      </div></div>
+      </div>
+</div>
+<!--card 2-->
+<div class="grid col-span-4 p-4 border border-1 rounded-xl">
+  <img class="w-full h-36" src="accets/img2.png" alt="accets/img2.png">
+  
+</div>
+
+<!--card 3-->
+<div class="grid col-span-3 p-4 border border-1 rounded-xl">
+  <img class="w-full h-36" src="accets/img2.png" alt="accets/img3.png">
+
+</div>
+<!--card 4-->
+        <div class="grid col-span-6 border rounded-xl">
+          <div class="flex p-2 gap-2">
+          <!--img-->
+          <div class=""><img class="h-full w-60" src="accets/img4.png" alt="accets/img1.png"></div>
+          <div class="gap-4 pt-4">
+            <h3 class="font-bold">Commercial</h3
+          <p class="text-base">Financing or refinancing options on conventional.</p>
+        <div class="card-actions justify-start">
+    <h4 class="text-md font-bold flex gap-2 items-center justify-center text-black">  View Details
+    <span class="badge bg-bgbtn py-4 px-3 border-none"> <i class="fa-solid fa-arrow-right text-black -rotate-45 "></i> </span></h4>
+      </div></div>
+      </div>
+</div>
+
+<!--card 5-->
+<div class="grid col-span-3 p-4 border border-1 rounded-xl">
+  <img class="w-full h-36" src="accets/img5.png" alt="accets/img3.png">
+
+</div>
+
+</div>
+      
+ <!--Portfolio section end here-->
+ 
+  <!-- challenge section end here-->
+  <section class="w-11/12 mx-auto relative ">
+    <!--card-->
+    <div class=" shadow absolute top-32 left-0.75 z-10 bg-gradient-to-r from-[#ABEF5F60] to-[#E7D1C340]">
+      <div class="stat">
+        <div class=" text-sm">Special Price</div>
+        <div class="font-bold text-1.5xl">320$</div>
+        <div class="text-sm">21% Discount</div>
+      </div>
+      <!--title & subtitle-->
+    </div>
+    <div class="text-center pt-8">
+      <h2 class="font-bold text-4xl">Welcome Pack</h2>
+      <p class="text-base mb-2">All our guests that stay at Furnished and Serviced Apartments receive as our gift a welcome pack.</p>
+    </div>
+    <!--carousel-->
+  <div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img
+      src="accets/banner.png"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle bg-bgbtnm border-none">❮</a>
+      <a href="#slide2" class="btn btn-circle bg-bgbtnm border-none">❯</a>
+    </div>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full">
+    <img
+      src="accets/article1.png"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle bg-bgbtnm border-none">❮</a>
+      <a href="#slide3" class="btn btn-circle bg-bgbtnm border-none">❯</a>
+    </div>
+  </div>
+  <div id="slide3" class="carousel-item relative w-full">
+    <img
+      src="accets/article3.png"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle bg-bgbtnm border-none">❮</a>
+      <a href="#slide4" class="btn btn-circle bg-bgbtnm border-none">❯</a>
+    </div>
+  </div>
+  <div id="slide4" class="carousel-item relative w-full">
+    <img
+      src="accets/article2.png"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle bg-bgbtnm border-none">❮</a>
+      <a href="#slide1" class="btn btn-circle bg-bgbtnm border-none">❯</a>
+    </div>
+  </div>
+</div>
+</section>
+
+ <!-- challenge section end here-->
+      
+ 
+ <!--our discuss section start here-->
+  <section class="hero bg-[url('accets/bg.jpg')] mt-2 py-6">
+    <div class="hero-content flex flex-col w-11/12 mx-auto">
+      <div>
+        <!--btn title & subtitle div-->
+        <div class="max-w-lg text-center">
+          <button class=" text-base py-1 px-2.5 rounded-3xl mb-2 bg-bgbtnm">
+            <i class="fa-solid fa-arrow-right "></i>Let's Connect</button>
+          <h1 class="lg:text-4xl text-3xl font-bold">Let s Discuss Next Project</h1>
+          <p class="py-2 text-base">
+            We can show what you need to do and help you through the process, so you can start to maximise your investment. We will evaluate the requirements through a step by step process.
+          </p>
+        </div>
+      </div>
+      <!--card div here-->
+      <div class="grid grid-cols-1 gap-3 w-full lg:w-11/12 mx-auto">
+        <!--input 1-->
+        <input  type="text" placeholder="First Name*" class="input rounded-3xl w-full text-xs" />
+        <!--input 2-->
+        <input type="text" placeholder="Last Name*" class="input rounded-3xl w-full text-xs" />
+        <!--input 3-->
+        <input type="text" placeholder="Phone Number*" class="input rounded-3xl w-full text-xs" />
+        <!--input 4-->
+        <input type="text" placeholder="Email Number*" class="input rounded-3xl w-full text-xs" />
+      </div>
+       <!--textare & button div-->
+      <div class="grid grid-cols-1 gap-3 w-full lg:w-11/12 mx-auto">
+        <!--textarea-->
+        <textarea class="textarea rounded-2xl text-xs h-28 col-span-2 " placeholder="Write your message here"></textarea>
+
+        <!--button-->
+        <button class="btn btn-primary w-full lg:wy-3 lg:wx-6 border-bgbtnm rounded-3xl bg-bgbtn text-black font-bold col-span-2 ">View Details
+          <div class="bg-black p-2 px-2.5 rounded-full">
+            <i class="fa-solid fa-arrow-right text-white -rotate-45 "></i>
+          </div>
+        </button>     
+      </div>
+    </div>
+  </section>
+  <!--our discuss section end here-->
+
+  <!--footer start here-->
+  <footer>
+  <section class="hero bg-[#1C1C1C] py-6">
+    <div class="hero-content flex flex-col w-11/12 mx-auto"> 
+      <div>
+        <!--btn title & subtitle div-->
+        <div class="max-w-lg text-center">
+          <h1 class="lg:text-4xl text-3xl font-bold flex gap-2 items-center justify-center text-white">  
+          <span class="badge bg-bgbtn py-4 px-3 border-none"> <i class="fa-solid fa-arrow-right text-black -rotate-45 "></i> </span>
+              Rinterio</h1>
+          <p class="py-2 text-base text-[#737373]">
+        We've been successful in helping secure corporate housing services for project managers bringing a group of employees on a long term assignment.
+          </p>
+        </div>
+      </div>
+      <div class="flex font-bold text-center lg:flex-row lg:space-x-16 flex-col space-y-4 text-white">
+        <p>Home</p>
+        <p>Services</p>
+        <p>Portfolio</p>
+        <p>Blogs</p>
+        <p>Contact Us</p>
+      </div>
+      
+      <!--button div-->
+      <div class="w-full lg:w-3/12 mx-auto">
+
+        <!--button-->
+        <button class="btn btn-primary w-full lg:wy-3 lg:wx-6 border-bgbtnm rounded-3xl bg-bgbtn text-black font-bold col-span-2 ">Book Consult
+          <div class="bg-black p-2 px-2.5 rounded-full">
+            <i class="fa-solid fa-arrow-right text-white -rotate-45 "></i>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+  </footer>
+  <!--our footer end here-->
+</body>
 </html>
